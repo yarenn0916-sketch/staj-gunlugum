@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staj Günlüğüm</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Staj Günlüğüm - Yaren Erem (Akıllı Şehircilik)</h1>
+      <p>Staj süresince öğrendiklerim, yaptıklarım.</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- 1. KART: ARAŞTIRMA-->
+    <article class="post">
+      <img src="research.png" alt="Araştırma" class="sticker-img">
+      <h2>Akıllı Şehircilik ile İlgili Araştırma</h2>
+      <span class="date">〰 23 Eylül 2026 〰</span> 
+      <p>Akıllı şehircilik nedir? Temel Amaçları Nedir?<br>
+        Vatandaşa ne gibi yararları var? vb. konuları araştırma.
+      </p>
+      <button onclick="beğen(this)">❤️ <span>0</span> Beğeni</button>
+    </article>
+
+    <!-- 2. KART: YAZICI -->
+    <article class="post">
+      <img src="printer.png" alt="Yazıcı" class="sticker-img">
+      <h2>Yazıcıyı Kullanma</h2>
+      <span class="date">〰 23 Eylül 2026 〰</span>
+      <p>Çıktı çıkarmak, tarama yapmak, fotokopi çektirmek gibi işleri yapmak.</p>
+      <button onclick="beğen(this)">❤️ <span>0</span> Beğeni</button>
+    </article>
+
+    <!-- 3. KART: VERİ ETİKETLEME -->
+    <article class="post">
+      <img src="personal-computer.png" alt="Veri Etiketleme" class="sticker-img">
+      <h2>Veri Etiketleme</h2>
+      <span class="date">〰 7 Ekim 2026 〰</span>
+      <p> </p>
+      <button onclick="beğen(this)">❤️ <span>0</span> Beğeni</button>
+    </article>
+
+    <!-- 4. KART: WEB SİTESİ KODLAMA -->
+    <article class="post">
+      <img src="server.png" alt="Sunucu / Web" class="sticker-img">
+      <h2>Web Sitesi Tasarlama</h2>
+      <span class="date">〰 8 Ekim 2026 〰</span>
+      <p>Staj günlerinde hem boş zamanımı değerlendirmek hem de yaptığım işleri listelemek amacıyla oluşturduğum web sayfası!</p>
+      <button onclick="beğen(this)">❤️ <span>0</span> Beğeni</button>
+    </article>
+
+    
+
+  </main>
+
+  <script src="blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #8e9fff7c;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* KART STİLİ VE BANT/STICKER HİZALAMASI */
+.post {
+  background: white;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative; /* Sticker ve bantlar için şart */
+  border: 2px dashed #c7d2fe; /* Defter dikiş efekti */
+}
+
+/* KART ÜSTÜNDEKİ SARI BANT EFEKTİ */
+.post::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 100px;
+  height: 24px;
+  background-color: rgba(255, 233, 65, 0.719); /* Şeffaf sarı bant */
+  border-left: 2px dashed rgba(0, 0, 0, 0.1);
+  border-right: 2px dashed rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.post h2 {
+  color: #1e1b4b;
+  margin-bottom: 8px;
+  padding-right: 70px; /* Sticker ile başlığın çakışmaması için */
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.post p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* SAĞ ÜST KÖŞEDEKİ STICKER FOTOĞRAFLARI */
+.sticker-img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 80px; /* Sticker boyutu */
+  height: auto;
+  transform: rotate(8deg); /* Yamuk sticker duruşu */
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+/* Mouse ile kartın üzerine gelince sticker hareket etsin */
+.post:hover .sticker-img {
+  transform: rotate(-8deg) scale(1.1);
+}
+
+button {
+  background-color: #e0e7ff;
+  color: #4338ca;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #c7d2fe;
+}
