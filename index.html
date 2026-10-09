@@ -26,7 +26,7 @@
       <p>Akıllı şehircilik kavramı,temel amaçları ve vatandaşlara sağladığı faydalar gibi<br>
          konular üzerine kapsamlı araştırma ve incelemeler yapılmıştır.
       </p>
-       <button id="btn-arastirma" onclick="begen('arastirma')">❤️ <span id="arastirma-count">0</span> Beğeni</button>
+      <button onclick="beğen(this)">❤️ <span>0</span> Beğeni</button>
     </article>
 
     <!-- 2. KART: YAZICI -->
@@ -36,7 +36,7 @@
       <span class="date">〰 23 Eylül 2026 〰</span>
       <p>Departman bünyesindeki belge yönetimi süreçlerini desteklemek amacıyla<br>
         döküman tarama,fotokopi ve baskı işlemlerinin gerçekleştirilmesi.</p>
-       <button id="btn-yazici" onclick="begen('yazici')">❤️ <span id="yazici-count">0</span> Beğeni</button>
+      <button onclick="beğen(this)">❤️ <span>0</span> Beğeni</button>
     </article>
 
     <!-- 3. KART: VERİ ETİKETLEME -->
@@ -46,7 +46,7 @@
       <span class="date">〰 7 Ekim 2026 〰</span>
       <p>Akıllı şehir sistemleri/projeleri kapsamında kullanılmak üzere veri setlerinin sınıflandırılması,<br>
       düzenlenmesi ve etiketlenmesi süreçlerinin yürütülmesi.</p>
-      <button id="btn-veri_etiketleme" onclick="begen('veri_etiketleme')">❤️ <span id="veri_etiketleme-count">0</span> Beğeni</button>
+      <button onclick="beğen(this)">❤️ <span>0</span> Beğeni</button>
     </article>
 
     <!-- 4. KART: WEB SİTESİ KODLAMA -->
@@ -56,15 +56,13 @@
       <span class="date">〰 8 Ekim 2026 〰</span>
       <p>Staj süresi boyunca gerçekleştirilen faaliyetlerin sistemli bir şekilde dökümante edilmesi<br>
       ve sergilenmesi amacıyla bir web sayfasının tasarlanıp geliştirilmesi.</p>
-      <button id="btn-web_tasarim" onclick="begen('web_tasarim')">❤️ <span id="web_tasarim-count">0</span> Beğeni</button>
+      <button onclick="beğen(this)">❤️ <span>0</span> Beğeni</button>
     </article>
 
-  </main>
-  <!-- Firebase SDK'ları -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     
-    <!-- Harici JavaScript Dosyan -->
-    <script src="blog.js"></script>
+
+  </main>
+
+  <script src="blog.js"></script>
 </body>
 </html>
